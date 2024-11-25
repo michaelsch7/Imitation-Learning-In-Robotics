@@ -7,7 +7,7 @@ import torch
 import cv2
 import metaworld
 import random
-from RoboNet import RoboNet
+from Model/RoboNet import RoboNet
 from RoboNetUtilities import utils
 
 actionsList = []
