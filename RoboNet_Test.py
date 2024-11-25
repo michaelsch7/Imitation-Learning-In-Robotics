@@ -8,7 +8,7 @@ import cv2
 import metaworld
 import random
 from Model.RoboNet import RoboNet
-from RoboNetUtilities import utils
+from Utilities.RoboNetUtilities import utils
 
 actionsList = []
 pygame.init()
