@@ -7,7 +7,7 @@ import torch
 import cv2
 import metaworld
 import random
-from Model/RoboNet import RoboNet
+from Model.RoboNet import RoboNet
 from RoboNetUtilities import utils
 
 actionsList = []
@@ -46,7 +46,7 @@ obs = env.reset()
 
 action = np.zeros(4)
 RoboNet = RoboNet(8)
-RoboNet.load_state_dict(torch.load("ModelWeights/RoboNetWeights.pth")) 
+RoboNet.load_state_dict(torch.load("Model Weights/RoboNetWeights.pth")) 
 arm_input = torch.tensor([0.1, 0.1, 0.1, 0.1]).unsqueeze(0) # Initilize arm input before first step (t=0)
 RoboNet.eval()
 timestep = 0
